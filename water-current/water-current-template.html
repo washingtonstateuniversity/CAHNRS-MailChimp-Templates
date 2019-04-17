@@ -19,7 +19,9 @@
 			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
 
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-
+			.mcnPreviewText {
+				display:none !important;
+			}
 			/* ========== Page Styles ========== */
 
 			#bodyCell{padding:20px;}
@@ -32,7 +34,7 @@
 			* @theme page
 			*/
 			body, #bodyTable{
-				/*@editable*/ background-color:#DEE0E2;
+				/*@editable*/ background-color:#CCDAE4;
 			}
 
 			/**
@@ -42,7 +44,7 @@
 			* @theme page
 			*/
 			#bodyCell{
-				/*@editable*/ border-top:4px solid #DEE0E2;
+				/*@editable*/ border-top:4px solid #CCDAE4;
 			}
 
 			/**
@@ -51,7 +53,7 @@
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
-				/*@editable*/ border:1px solid #DEE0E2;
+				/*@editable*/ border:1px solid #CCDAE4;
 			}
 
 			/**
@@ -61,19 +63,20 @@
 			* @style heading 1
 			*/
 			h1{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#FFFFFF !important;
 				display:block;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-				/*@editable*/ font-size:26px;
+				/*@editable*/ font-size:14px;
 				/*@editable*/ font-style:normal;
-				/*@editable*/ font-weight:bold;
+				/*@editable*/ font-weight:lighter;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ letter-spacing:normal;
+				/*@editable*/ letter-spacing:1px;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:0px;
 				margin-left:0;
-				/*@editable*/ text-align:left;
+				/*@editable*/ text-align:center;
+				text-transform: uppercase;
 			}
 
 			/**
@@ -83,7 +86,7 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:20px;
@@ -105,7 +108,7 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:16px;
@@ -127,7 +130,7 @@
 			* @style heading 4
 			*/
 			h4{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#000000 !important;
 				display:block;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:14px;
@@ -161,7 +164,7 @@
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#000000;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:125%;
@@ -174,7 +177,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#004999;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -188,7 +191,7 @@
 			#templateHeader{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:5px solid #FFFFFF;
 			}
 
 			/**
@@ -197,7 +200,7 @@
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
 			.headerContent{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#000000;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
@@ -236,7 +239,7 @@
 			#templateBody{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:2px solid #CCDAE4;
 			}
 			/**			
 			* @tab Body
@@ -245,20 +248,37 @@
 			*/
 			#templateEvent{
 				/*@editable*/ background-color:#FFFFFF;
-				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-top:2px solid #CCDAE4;
+				/*@editable*/ border-bottom:5px solid #CCDAE4;
 			}
 			/**	
 			* @tab Body
 			* @section body style
 			* @tip Set the background color and borders for your email's news area.
 			*/
-			#templateNews{
-				/*@editable*/ background-color:#D7DADB;
-				/*@editable*/ border-top:1px solid #D7DADB;
-				/*@editable*/ border-bottom:1px solid #D7DADB;
+			#templateNewsletterTitle{
+				/*@editable*/ background-color:#4D5051;
+				/*@editable*/ border-top:1px solid #4D5051;
+				/*@editable*/ border-bottom:1px solid #4D5051;
 			}			
-
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyTitle{
+				/*@editable*/ color:#000000;
+				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+                /*@editable*/ text-decoration:none;
+				padding-top:10px;
+				padding-right:10px;
+				padding-bottom:10px;
+				padding-left:10px;
+				/*@editable*/ text-align:center;
+			}
 			/**
 			* @tab Body
 			* @section body text
@@ -266,7 +286,7 @@
 			* @theme main
 			*/
 			.bodyContent{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#000000;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
@@ -284,7 +304,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#9A5E1D;
+				/*@editable*/ color:#004999;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -298,8 +318,8 @@
 			/* ========== Column Styles ========== */
 
 /**			.templateColumnContainer{width:200px;} */
-            .templateColumnContainerIMG{width:200px;border-top:1px solid #CCCCCC;}
-            .templateColumnContainerTEXT{width:400px;border-top:1px solid #CCCCCC;}
+            .templateColumnContainerIMG{width:200px;border-top:1px solid #CCDAE4;}
+            .templateColumnContainerTEXT{width:400px;border-top:1px solid #CCDAE4;}
 
 			/**
 			* @tab Columns
@@ -309,7 +329,7 @@
 			#templateColumns{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom:1px solid #CCDAE4;
 			}
 
 
@@ -319,7 +339,7 @@
 			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
 			*/
 			.rightColumnContent{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#000000;
 				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
@@ -337,7 +357,7 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#9A5E1D;
+				/*@editable*/ color:#004999;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -357,7 +377,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#222222;
+				/*@editable*/ background-color:#42484A;
 				/*@editable*/ border-top:1px solid #FFFFFF;
 			}
 
@@ -385,7 +405,7 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-				/*@editable*/ color:#C27625;
+				/*@editable*/ color:#76D6F2;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -420,7 +440,7 @@
 				* @tip Make the first-level headings larger in size for better readability on small screens.
 				*/
 				h1{
-					/*@editable*/ font-size:24px !important;
+					/*@editable*/ font-size:14px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -480,6 +500,15 @@
 				}
 
 				/* ======== Body Styles ======== */
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyTitle{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:125% !important;
+				}
 
 				/**
 				* @tab Mobile Styles
@@ -542,6 +571,10 @@
 		</style>
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+		    <!--*|IF:MC_PREVIEW_TEXT|*-->
+			<!--[if !gte mso 9]><!--><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span>
+			<!--<![endif]-->
+			<!--*|END:IF|*-->
     	<center>
         	<table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
             	<tr>
@@ -553,8 +586,7 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-												Events and updates on WSU research and Extension supporting Northwest agriculture
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">Volumne 1, Issue 1, 2019
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                             <td valign="top" width="85" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01"><div style="text-align:right;"><a href="*|ARCHIVE|*" target="_blank">View Online</a></div>
@@ -577,6 +609,19 @@
                                     </table>
                                     <!-- // END HEADER -->
                                 </td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNewsletterTitle">
+										<tr>
+											<td valign="top" class="bodyTitle" mc:edit="body_content01">
+													<h1>Washington State University Extension Water Quality Newsletter</h1>
+											</td>
+										</tr>
+									</table>
+									<!-- // END BODY -->
+								</td>
 							</tr>
 							<tr>
 									<td align="center" valign="top">
@@ -638,39 +683,19 @@
 										<!-- // END BODY -->
 									</td>
 								</tr>
-								<tr>
-										<td align="center" valign="top">
-											<!-- BEGIN BODY // -->
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNews">
-												<tr>
-													<td valign="top" class="bodyContent" mc:edit="body_content01">
-															<strong>Enjoy our monthly newsletters from CAHNRS!</strong>
-															<br>
-															<br><strong>WSU's On Solid Ground</strong>
-															<br>
-															Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=df0b077091">Subscribe here »</a>
-															<br>
-															<br><strong>WSU's Voice of the Vine</strong>
-															<br>
-															Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=a3e4964764">Subscribe here »</a>
-													</td>
-												</tr>
-											</table>
-											<!-- // END BODY -->
-										</td>
-									</tr>
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-													If you have comments or questions about a story, please <a href="mailto:struscott@wsu.edu">contact us</a>
+													Add image here
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
-													<a href="https://cahnrs.wsu.edu/communications/">CAHNRS Communications</a>, Washington State University, PO Box 646228, Pullman, WA 99164-6228<br><a href="http://access.wsu.edu/">Accessibility</a>&nbsp;| <a href="http://copyright.wsu.edu/">Copyright</a>&nbsp;| <a href="http://policies.wsu.edu/">Policies</a>
+											<td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
+												If you have comments or questions about a story, please <a href="mailto:struscott@wsu.edu">contact us</a><br><br>
+												<a href="https://cahnrs.wsu.edu/communications/">CAHNRS Communications</a>, Washington State University, PO Box 646228, Pullman, WA 99164-6228<br><br><a href="http://access.wsu.edu/">Accessibility</a>&nbsp;| <a href="http://copyright.wsu.edu/">Copyright</a>&nbsp;| <a href="http://policies.wsu.edu/">Policies</a>
 											 </td>
                                         </tr>
                                         <tr>
