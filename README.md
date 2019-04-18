@@ -1,2 +1,2 @@
-# mc-templates
-MailChimp Templates
+# MailChimp Templates
+
