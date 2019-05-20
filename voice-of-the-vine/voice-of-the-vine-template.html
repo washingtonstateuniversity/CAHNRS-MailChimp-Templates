@@ -65,19 +65,20 @@
 			* @style heading 1
 			*/
 			h1{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#FFFFFF !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-				/*@editable*/ font-size:26px;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				/*@editable*/ font-size:16px;
 				/*@editable*/ font-style:normal;
-				/*@editable*/ font-weight:bold;
+				/*@editable*/ font-weight:lighter;
 				/*@editable*/ line-height:100%;
-				/*@editable*/ letter-spacing:normal;
+				/*@editable*/ letter-spacing:.5px;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:0px;
 				margin-left:0;
-				/*@editable*/ text-align:left;
+				/*@editable*/ text-align:center;
+				text-transform: uppercase;
 			}
 
 			/**
@@ -87,9 +88,9 @@
 			* @style heading 2
 			*/
 			h2{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#464e54 !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -109,9 +110,9 @@
 			* @style heading 3
 			*/
 			h3{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#464e54 !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -131,9 +132,9 @@
 			* @style heading 4
 			*/
 			h4{
-				/*@editable*/ color:#1F1F1F !important;
+				/*@editable*/ color:#464e54 !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:14px;
 				/*@editable*/ font-style:italic;
 				/*@editable*/ font-weight:bold;
@@ -165,11 +166,11 @@
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent{
-				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ color:#656565;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:125%;
-				/*@editable*/ text-align:left;
+				/*@editable*/ text-align:center;
 			}
 
 			/**
@@ -178,7 +179,7 @@
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#1F1F1F;
+				/*@editable*/ color:#656565;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -201,8 +202,8 @@
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
 			.headerContent{
-				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ color:#656565;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
@@ -220,7 +221,7 @@
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#981E32;
+				/*@editable*/ color:#7A6D25;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -257,11 +258,29 @@
 			* @section body style
 			* @tip Set the background color and borders for your email's news area.
 			*/
-			#templateNews{
-				/*@editable*/ background-color:#D7DADB;
-				/*@editable*/ border-top:1px solid #D7DADB;
-				/*@editable*/ border-bottom:1px solid #D7DADB;
-			}			
+			#templateNewsletterTitle{
+				/*@editable*/ background-color:#7A6D2E;
+				/*@editable*/ border-top:1px solid #7A6D2E1;
+				/*@editable*/ border-bottom:1px solid #7A6D2E;
+			}
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.bodyTitle{
+				/*@editable*/ color:#000000;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				/*@editable*/ font-size:14px;
+				/*@editable*/ line-height:150%;
+                /*@editable*/ text-decoration:none;
+				padding-top:10px;
+				padding-right:10px;
+				padding-bottom:10px;
+				padding-left:10px;
+				/*@editable*/ text-align:center;
+			}
 
 			/**
 			* @tab Body
@@ -270,8 +289,8 @@
 			* @theme main
 			*/
 			.bodyContent{
-				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ color:#464e54;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
                 /*@editable*/ text-decoration:none;
@@ -288,7 +307,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#9A5E1D;
+				/*@editable*/ color:#7A6D25;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -323,8 +342,8 @@
 			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
 			*/
 			.rightColumnContent{
-				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ color:#464e54;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
                 /*@editable*/ text-decoration:none !important;
@@ -341,7 +360,7 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#9A5E1D;
+				/*@editable*/ color:#7A6D25;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -354,6 +373,42 @@
 
 			/* ========== Footer Styles ========== */
 
+			#templateSocial{
+				/*@editable*/ background-color:#7A6D2E;
+				/*@editable*/ border-top:1px solid #7A6D2E;
+				/*@editable*/ border-bottom:1px solid #7A6D2E;
+			}			
+
+			/**
+			* @tab Body
+			* @section body text
+			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
+			* @theme main
+			*/
+			.footerSocial{
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				/*@editable*/ font-size:12px;
+				/*@editable*/ line-height:150%;
+                /*@editable*/ text-decoration:none;
+				padding-top:20px;
+				padding-right:20px;
+				padding-bottom:20px;
+				padding-left:20px;
+				/*@editable*/ text-align:center;
+			}
+
+			/**
+			* @tab Body
+			* @section body link
+			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+			*/
+			.footerSocial a:link, .footerSocial a:visited, /* Yahoo! Mail Override */ .footerSocial a .yshortcuts /* Yahoo! Mail Override */{
+				/*@editable*/ color:#ffffff;
+				/*@editable*/ font-weight:normal;
+				/*@editable*/ text-decoration:underline;
+			}
+
 			/**
 			* @tab Footer
 			* @section footer style
@@ -361,7 +416,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#222222;
+				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
 			}
 
@@ -372,15 +427,15 @@
 			* @theme footer
 			*/
 			.footerContent{
-				/*@editable*/ color:#FFFFFF;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ color:#656565;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:150%;
 				padding-top:20px;
 				padding-right:20px;
 				padding-bottom:20px;
 				padding-left:20px;
-				/*@editable*/ text-align:left;
+				/*@editable*/ text-align:center;
 			}
 
 			/**
@@ -389,7 +444,7 @@
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-				/*@editable*/ color:#C27625;
+				/*@editable*/ color:#656565;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -424,7 +479,7 @@
 				* @tip Make the first-level headings larger in size for better readability on small screens.
 				*/
 				h1{
-					/*@editable*/ font-size:24px !important;
+					/*@editable*/ font-size:18px !important;
 					/*@editable*/ line-height:100% !important;
 				}
 
@@ -484,7 +539,15 @@
 				}
 
 				/* ======== Body Styles ======== */
-
+				/**
+				* @tab Mobile Styles
+				* @section body text
+				* @tip Make the body content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
+				*/
+				.bodyTitle{
+					/*@editable*/ font-size:14px !important;
+					/*@editable*/ line-height:125% !important;
+				}
 				/**
 				* @tab Mobile Styles
 				* @section body text
@@ -562,12 +625,8 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-												Events and updates on WSU research and Extension supporting Northwest agriculture
+												<a href="*|FORWARD|*" target="_blank">Forward to a friend</a>&nbsp;·&nbsp;<a href="*|ARCHIVE|*" target="_blank">View browser</a>
                                             </td>
-                                            <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="85" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01"><div style="text-align:right;"><a href="*|ARCHIVE|*" target="_blank">View Online</a></div>
-                                            </td>
-                                            <!-- *|END:IF|* -->
                                         </tr>
                                     </table>
                                     <!-- // END PREHEADER -->
@@ -579,7 +638,7 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/0fae7675-f9a0-4a9d-adb9-6301719cd55e.jpg" alt="On Solid Ground, Agricultural and Natural Resources Science News, WSU College of Agricultural, Human, and Natural Resource Sciences." style="height: 148px; width: 600px; margin: 0; padding: 0;"  width="600" height="148" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/dae29b0a-e548-4bfb-846e-86750f633eea.png" alt="Voice of the Vine." style="height: 236px; width: 600px; margin: 0; padding: 0;"  width="600" height="148" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -587,19 +646,39 @@
                                 </td>
 							</tr>
 							<tr>
-									<td align="center" valign="top">
-										<!-- BEGIN BODY // -->
-										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-											<tr>
-												<td valign="top" class="bodyContent" mc:edit="body_content00">
-													<a href="*|ARCHIVE|*">ARCHIVE</a> | <a href="*|UPDATE_PROFILE|*">MANAGE SUBSCRIPTION</a>
-												</td>
-											</tr>
-										</table>
-										<!-- // END BODY -->
-									</td>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNewsletterTitle">
+										<tr>
+											<td valign="top" class="bodyTitle" mc:edit="body_content00">
+													<h1>Washington&nbsp;State&nbsp;University&nbsp;Viticulture&nbsp;&amp;&nbsp;Enology</h1>
+											</td>
+										</tr>
+									</table>
+									<!-- // END BODY -->
+								</td>
+							</tr>
                         	<tr>
-                            	<td align="center" valign="top" style="color:#1F1F1F;text-decoration: none;">
+                            	<td align="center" valign="top">
+                                	<!-- BEGIN BODY // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                    	<tr>
+                                        	<td class="bodyContent" style="padding-top:10; padding-bottom:0;">
+                                            	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="bodyContent" mc:edit="body_content01">
+                                                <h2>Primary Feature</h2>
+                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+							<tr>
+                            	<td align="center" valign="top" style="color:#656565;text-decoration: none;">
                                 	<!-- BEGIN COLUMNS // -->
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
                                     	<tr mc:repeatable>
@@ -635,7 +714,7 @@
 										<!-- BEGIN BODY // -->
 										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateEvent">
 											<tr>
-												<td valign="top" class="bodyContent" mc:edit="body_content">
+												<td valign="top" class="bodyContent" mc:edit="body_content02">
 														<h2 class="null">[Month] [Year]</h2>
 														<h3 class="null">Upcoming Events</h3>
 														<strong>Soil Health Workshop</strong><br>
@@ -646,44 +725,40 @@
 										<!-- // END BODY -->
 									</td>
 								</tr>
+
 								<tr>
-										<td align="center" valign="top">
-											<!-- BEGIN BODY // -->
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNews">
-												<tr>
-													<td valign="top" class="bodyContent" mc:edit="body_content01">
-															<strong>Enjoy our monthly newsletters from CAHNRS!</strong>
-															<br>
-															<br><strong>WSU's On Solid Ground</strong>
-															<br>
-															Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=df0b077091">Subscribe here »</a>
-															<br>
-															<br><strong>WSU's Voice of the Vine</strong>
-															<br>
-															Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=a3e4964764">Subscribe here »</a>
-													</td>
-												</tr>
-											</table>
-											<!-- // END BODY -->
-										</td>
-									</tr>
+									<td align="center" valign="top">
+										<!-- BEGIN BODY // -->
+										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateSocial">
+											<tr>
+												<td valign="top" class="footerSocial" mc:edit="body_content03">
+													<a href="http://wine.wsu.edu/" target="_blank"><img alt="Find us at wine.wsu.edu" data-file-id="1183025" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/f6909df0-16f3-4fcc-9dd1-1e075dac96fe.png" style="border: 0px initial ; width: 23px; height: 36px; margin: 0px;" width="23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/wine.wsu.edu" target="_blank"><img alt="Find us on Facebook" data-file-id="1183029" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/e38181d5-6e8d-49b3-b888-16c40a218c5b.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/WSUWineScience" target="_blank"><img alt="Find us on Twitter" data-file-id="1183033" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/b8b74823-a554-433f-aa89-56ec93e4623d.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wsu_wine_science/" target="_blank"><img alt="Find us on Instagram" data-file-id="1183033" height="24" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/7f4bc03e-7cd4-49a2-bd70-5204ef286523.png" style="border: 0px initial ; width: 24px; height: 24px; margin: 0px;" width="24"/></a><br>
+													If you have comments or questions about a story, please <a href="mailto:b.schrand@wsu.edu">contact us</a>.
+												</td>
+											</tr>
+										</table>
+										<!-- // END BODY -->
+									</td>
+								</tr>
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-													If you have comments or questions about a story, please <a href="mailto:struscott@wsu.edu">contact us</a>
+												<a href="http://wine.wsu.edu/" target="_blank"><img align="center" alt="WSU Extension logo" height="38" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/fbf20a41-7cea-48c6-8039-0e906ca89c3d.png" style="border: 0px; width: 246px; height: 52px; margin: 0px;" width="246"></a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
-													<a href="https://cahnrs.wsu.edu/communications/">CAHNRS Communications</a>, Washington State University, PO Box 646228, Pullman, WA 99164-6228<br><a href="http://access.wsu.edu/">Accessibility</a>&nbsp;| <a href="http://copyright.wsu.edu/">Copyright</a>&nbsp;| <a href="http://policies.wsu.edu/">Policies</a>
+												<a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe</a><br>
+												CAHNRS Communications, Washington State University<br>
+												PO Box 646228, Pullman, WA 99164-6228
 											 </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
-													<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;| <a href="*|UPDATE_PROFILE|*">update subscription preferences</a> 
+												<a href="https://access.wsu.edu/" target="_blank">Accessibility</a> | <a href="https://ucomm.wsu.edu/wsu-copyright-policy/" target="_blank">Copyright</a> | <a href="https://policies.wsu.edu/" target="_blank">Policies</a>
                                             </td>
                                         </tr>
                                     </table>
