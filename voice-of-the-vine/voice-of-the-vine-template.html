@@ -193,7 +193,7 @@
 			#templateHeader{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:none;
 			}
 
 			/**
@@ -241,7 +241,7 @@
 			#templateBody{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #FFFFFF;
+				/*@editable*/ border-bottom:1px solid #CCCCCC;
 			}
 			/**			
 			* @tab Body
@@ -260,7 +260,7 @@
 			*/
 			#templateNewsletterTitle{
 				/*@editable*/ background-color:#7A6D2E;
-				/*@editable*/ border-top:1px solid #7A6D2E1;
+				/*@editable*/ border-top:1px solid #7A6D2E;
 				/*@editable*/ border-bottom:1px solid #7A6D2E;
 			}
 			/**
@@ -321,8 +321,8 @@
 			/* ========== Column Styles ========== */
 
 /**			.templateColumnContainer{width:200px;} */
-            .templateColumnContainerIMG{width:200px;border-top:1px solid #CCCCCC;}
-            .templateColumnContainerTEXT{width:400px;border-top:1px solid #CCCCCC;}
+            .templateColumnContainerIMG{width:200px;border-top:1px solid #B5BABE;}
+            .templateColumnContainerTEXT{width:400px;border-top:1px solid #B5BABE;}
 
 			/**
 			* @tab Columns
@@ -332,7 +332,7 @@
 			#templateColumns{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom:1px solid #B5BABE;
 			}
 			/**
 			* @tab Columns
@@ -342,7 +342,7 @@
 			#templateButtons{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
-				/*@editable*/ border-bottom:1px solid #CCCCCC;
+				/*@editable*/ border-bottom:1px solid #FFFFFF;
 			}
 
 			/**
@@ -670,7 +670,7 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN BODY // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                     	<tr>
                                         	<td class="bodyContent" style="padding-top:10; padding-bottom:0;">
                                             	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
@@ -718,36 +718,20 @@
                                     <!-- // END COLUMNS -->
                                 </td>
 							</tr>
-							<tr>
-									<td align="center" valign="top">
-										<!-- BEGIN BODY // -->
-										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateEvent">
-											<tr>
-												<td valign="top" class="bodyContent" mc:edit="body_content02">
-														<h2 class="null">[Month] [Year]</h2>
-														<h3 class="null">Upcoming Events</h3>
-														<strong>Soil Health Workshop</strong><br>
-														WSU Small Grains <a href="http://smallgrains.wsu.edu/event/management-matters-for-soil-health-workshop/?utm_campaign=auto-draft&amp;utm_source=auto-draft-2019-17&amp;utm_medium=email&amp;utm_content=link-18">Management Matters for Soil Health Workshop</a> is Jan. 22 at Pullman. 
-												</td>
-											</tr>
-										</table>
-										<!-- // END BODY -->
-									</td>
-								</tr>
 <tr>
 <td valign="top" id="templateButtons">
 <!--[if (gte mso 9)|(IE)]>
-<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
 <tr>
 <td align="center" valign="top" width="300" style="width:300px;">
 <![endif]-->
-<table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
 <tr>
 <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
 <tbody class="mcnButtonBlockOuter">
 <tr>
-<td style="padding-top:20px; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #C69214;border-radius: 3px;background-color: #FFFFFF;">
+<td style="padding-top:25px; padding-right:18px; padding-bottom:20px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #BE8B13;border-radius: 3px;background-color: #FFFFFF;">
 <tbody>
 <tr>
 <td align="center" valign="middle" class="mcnButtonContent" style="font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 15px;">
@@ -766,13 +750,13 @@
 </td>
 <td align="center" valign="top" width="300" style="width:300px;">
 <![endif]-->
-<table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
 <tr>
-<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+<td valign="top" class="columnContainer"><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
 <tbody class="mcnButtonBlockOuter">
 <tr>
-<td style="padding-top:20px; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-<table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #C69214;border-radius: 3px;background-color: #FFFFFF;">
+<td style="padding-top:25px; padding-right:18px; padding-bottom:20px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #BE8B13;border-radius: 3px;background-color: #FFFFFF;">
 <tbody>
 <tr>
 <td align="center" valign="middle" class="mcnButtonContent" style="font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 15px;">
@@ -800,7 +784,7 @@
 										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateSocial">
 											<tr>
 												<td valign="top" class="footerSocial" mc:edit="body_content03">
-													<a href="http://wine.wsu.edu/" target="_blank"><img alt="Find us at wine.wsu.edu" data-file-id="1183025" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/f6909df0-16f3-4fcc-9dd1-1e075dac96fe.png" style="border: 0px initial ; width: 23px; height: 36px; margin: 0px;" width="23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/wine.wsu.edu" target="_blank"><img alt="Find us on Facebook" data-file-id="1183029" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/e38181d5-6e8d-49b3-b888-16c40a218c5b.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/WSUWineScience" target="_blank"><img alt="Find us on Twitter" data-file-id="1183033" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/b8b74823-a554-433f-aa89-56ec93e4623d.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wsu_wine_science/" target="_blank"><img alt="Find us on Instagram" data-file-id="1183033" height="24" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/7f4bc03e-7cd4-49a2-bd70-5204ef286523.png" style="border: 0px initial ; width: 24px; height: 24px; margin: 0px;" width="24"/></a><br>
+													<a href="http://wine.wsu.edu/" target="_blank"><img alt="Find us at wine.wsu.edu" data-file-id="1183025" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/f6909df0-16f3-4fcc-9dd1-1e075dac96fe.png" style="border: 0px initial ; width: 23px; height: 36px; margin: 0px;" width="23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/wine.wsu.edu" target="_blank"><img alt="Find us on Facebook" data-file-id="1183029" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/e38181d5-6e8d-49b3-b888-16c40a218c5b.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/WSUWineScience" target="_blank"><img alt="Find us on Twitter" data-file-id="1183033" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/b8b74823-a554-433f-aa89-56ec93e4623d.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wsu_wine_science/" target="_blank"><img alt="Find us on Instagram" data-file-id="1183033" height="24" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/7f4bc03e-7cd4-49a2-bd70-5204ef286523.png" style="border: 0px initial ; width: 24px; height: 24px; margin: 0px;" width="24"/></a><br><br>
 													If you have comments or questions about a story, please <a href="mailto:b.schrand@wsu.edu">contact us</a>.
 												</td>
 											</tr>
@@ -814,11 +798,11 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-												<a href="http://wine.wsu.edu/" target="_blank"><img align="center" alt="WSU Extension logo" height="38" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/fbf20a41-7cea-48c6-8039-0e906ca89c3d.png" style="border: 0px; width: 246px; height: 52px; margin: 0px;" width="246"></a>
+												<a href="http://wine.wsu.edu/" target="_blank"><img align="center" alt="WSU Extension logo" width="246" height="52" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/fbf20a41-7cea-48c6-8039-0e906ca89c3d.png" style="border: 0px; width: 246px; height: 52px; margin: 0px;"></a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
+                                            <td valign="top" class="footerContent" style="padding-top:0;padding-bottom:0;" mc:edit="footer_content01">
 												<a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe</a><br>
 												CAHNRS Communications, Washington State University<br>
 												PO Box 646228, Pullman, WA 99164-6228
