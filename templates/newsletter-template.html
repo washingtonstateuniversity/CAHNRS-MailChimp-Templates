@@ -67,7 +67,7 @@
 			h1{
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:26px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -89,7 +89,7 @@
 			h2{
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -111,7 +111,7 @@
 			h3{
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
@@ -133,7 +133,7 @@
 			h4{
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:14px;
 				/*@editable*/ font-style:italic;
 				/*@editable*/ font-weight:bold;
@@ -166,7 +166,7 @@
 			*/
 			.preheaderContent{
 				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
@@ -202,7 +202,7 @@
 			*/
 			.headerContent{
 				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:20px;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
@@ -271,7 +271,7 @@
 			*/
 			.bodyContent{
 				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
                 /*@editable*/ text-decoration:none;
@@ -324,7 +324,7 @@
 			*/
 			.rightColumnContent{
 				/*@editable*/ color:#1F1F1F;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:16px;
 				/*@editable*/ line-height:150%;
                 /*@editable*/ text-decoration:none !important;
@@ -348,8 +348,9 @@
 
 			.leftColumnContent img{
 				display:inline;
-				height:auto;
-				max-width:260px;
+				height:auto !important;
+				/*@editable*/ max-width:560px !important;
+				/*@editable*/ width:100% !important;
 			}
 
 			/* ========== Footer Styles ========== */
@@ -373,7 +374,7 @@
 			*/
 			.footerContent{
 				/*@editable*/ color:#FFFFFF;
-				/*@editable*/ font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:10px;
 				/*@editable*/ line-height:150%;
 				padding-top:20px;
@@ -587,17 +588,18 @@
                                 </td>
 							</tr>
 							<tr>
-									<td align="center" valign="top">
-										<!-- BEGIN BODY // -->
-										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-											<tr>
-												<td valign="top" class="bodyContent" mc:edit="body_content00">
-													<a href="*|ARCHIVE|*">ARCHIVE</a> | <a href="*|UPDATE_PROFILE|*">MANAGE SUBSCRIPTION</a>
-												</td>
-											</tr>
-										</table>
-										<!-- // END BODY -->
-									</td>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content00">
+												<a href="*|ARCHIVE|*">ARCHIVE</a> | <a href="*|UPDATE_PROFILE|*">MANAGE SUBSCRIPTION</a>
+											</td>
+										</tr>
+									</table>
+									<!-- // END BODY -->
+								</td>
+							</tr>
                         	<tr>
                             	<td align="center" valign="top" style="color:#1F1F1F;text-decoration: none;">
                                 	<!-- BEGIN COLUMNS // -->
@@ -631,42 +633,42 @@
                                 </td>
 							</tr>
 							<tr>
-									<td align="center" valign="top">
-										<!-- BEGIN BODY // -->
-										<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateEvent">
-											<tr>
-												<td valign="top" class="bodyContent" mc:edit="body_content">
-														<h2 class="null">[Month] [Year]</h2>
-														<h3 class="null">Upcoming Events</h3>
-														<strong>Soil Health Workshop</strong><br>
-														WSU Small Grains <a href="http://smallgrains.wsu.edu/event/management-matters-for-soil-health-workshop/?utm_campaign=auto-draft&amp;utm_source=auto-draft-2019-17&amp;utm_medium=email&amp;utm_content=link-18">Management Matters for Soil Health Workshop</a> is Jan. 22 at Pullman. 
-												</td>
-											</tr>
-										</table>
-										<!-- // END BODY -->
-									</td>
-								</tr>
-								<tr>
-										<td align="center" valign="top">
-											<!-- BEGIN BODY // -->
-											<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNews">
-												<tr>
-													<td valign="top" class="bodyContent" mc:edit="body_content01">
-															<strong>Enjoy our monthly newsletters from CAHNRS!</strong>
-															<br>
-															<br><strong>WSU's On Solid Ground</strong>
-															<br>
-															Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=df0b077091">Subscribe here »</a>
-															<br>
-															<br><strong>WSU's Voice of the Vine</strong>
-															<br>
-															Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=a3e4964764">Subscribe here »</a>
-													</td>
-												</tr>
-											</table>
-											<!-- // END BODY -->
-										</td>
-									</tr>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateEvent">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content01">
+													<h2 class="null">[Month] [Year]</h2>
+													<h3 class="null">Upcoming Events</h3>
+													<strong>Soil Health Workshop</strong><br>
+													WSU Small Grains <a href="http://smallgrains.wsu.edu/event/management-matters-for-soil-health-workshop/?utm_campaign=auto-draft&amp;utm_source=auto-draft-2019-17&amp;utm_medium=email&amp;utm_content=link-18">Management Matters for Soil Health Workshop</a> is Jan. 22 at Pullman. 
+											</td>
+										</tr>
+									</table>
+									<!-- // END BODY -->
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNews">
+										<tr>
+											<td valign="top" class="bodyContent" mc:edit="body_content02">
+													<strong>Enjoy our monthly newsletters from CAHNRS!</strong>
+													<br>
+													<br><strong>WSU's On Solid Ground</strong>
+													<br>
+													Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=df0b077091">Subscribe here »</a>
+													<br>
+													<br><strong>WSU's Voice of the Vine</strong>
+													<br>
+													Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=a3e4964764">Subscribe here »</a>
+											</td>
+										</tr>
+									</table>
+									<!-- // END BODY -->
+								</td>
+							</tr>
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
