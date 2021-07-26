@@ -64,11 +64,11 @@
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 			* @style heading 1
 			*/
-			h1{
+			h1, h1 a, h1 a:visited, /* Yahoo! Mail Override */ h1 a .yshortcuts /* Yahoo! Mail Override */{
 				/*@editable*/ color:#FFFFFF !important;
 				display:block;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-size:30px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:lighter;
 				/*@editable*/ line-height:100%;
@@ -79,8 +79,9 @@
 				margin-left:0;
 				/*@editable*/ text-align:center;
 				text-transform: uppercase;
+                text-decoration: none;
 			}
-
+             
 			/**
 			* @tab Page
 			* @section heading 2
@@ -221,7 +222,7 @@
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#7A6D25;
+				/*@editable*/ color:#757821;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -259,9 +260,9 @@
 			* @tip Set the background color and borders for your email's news area.
 			*/
 			#templateNewsletterTitle{
-				/*@editable*/ background-color:#7A6D2E;
-				/*@editable*/ border-top:1px solid #7A6D2E;
-				/*@editable*/ border-bottom:1px solid #7A6D2E;
+				/*@editable*/ background-color:#757821;
+				/*@editable*/ border-top:1px solid #757821;
+				/*@editable*/ border-bottom:1px solid #757821;
 			}
 			/**
 			* @tab Body
@@ -269,8 +270,8 @@
 			* @tip Set the styling for your email's main content text. Choose a size and color that is easy to read.
 			* @theme main
 			*/
-			.bodyTitle{
-				/*@editable*/ color:#000000;
+			.bodyTitle {
+				/*@editable*/ color:#FFFFFF;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				/*@editable*/ font-size:14px;
 				/*@editable*/ line-height:150%;
@@ -307,7 +308,7 @@
 			* @tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
 			*/
 			.bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#7A6D25;
+				/*@editable*/ color:#757821;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -369,7 +370,7 @@
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-				/*@editable*/ color:#7A6D25;
+				/*@editable*/ color:#757821;
 				/*@editable*/ font-weight:normal;
 				/*@editable*/ text-decoration:underline;
 			}
@@ -377,16 +378,16 @@
 			.leftColumnContent img{
 				display:inline;
 				height:auto !important;
-				/*@editable*/ max-width:480px !important;
+				/*@editable*/ max-width:560px !important;
 				/*@editable*/ width:100% !important;
 			}
 
 			/* ========== Footer Styles ========== */
 
 			#templateSocial{
-				/*@editable*/ background-color:#7A6D2E;
-				/*@editable*/ border-top:1px solid #7A6D2E;
-				/*@editable*/ border-bottom:1px solid #7A6D2E;
+				/*@editable*/ background-color:#757821;
+				/*@editable*/ border-top:1px solid #757821;
+				/*@editable*/ border-bottom:1px solid #757821;
 			}			
 
 			/**
@@ -581,8 +582,6 @@
 				*/
 				.columnImage{
 					height:auto !important;
-					margin-left: auto;
-                    margin-right: auto;
 					/*@editable*/ max-width:480px !important;
 					/*@editable*/ width:100% !important;
 				}
@@ -637,7 +636,7 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-												<a href="*|FORWARD|*" target="_blank">Forward to a friend</a>&nbsp;·&nbsp;<a href="*|ARCHIVE|*" target="_blank">View browser</a>
+												Your key resource for all things <a href="https://soilhealth.wsu.edu/" target="_blank">soil health at WSU</a> view online
                                             </td>
                                         </tr>
                                     </table>
@@ -650,7 +649,7 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/dae29b0a-e548-4bfb-846e-86750f633eea.png" alt="Voice of the Vine." style="height: 236px; width: 600px; margin: 0; padding: 0;"  width="600" height="148" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                            	<img src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/dae29b0a-e548-4bfb-846e-86750f633eea.png" alt="" style="height: 318px; width: 600px; margin: 0; padding: 0;"  width="600" height="318" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                     </table>
@@ -663,7 +662,7 @@
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNewsletterTitle">
 										<tr>
 											<td valign="top" class="bodyTitle">
-													<h1>Washington&nbsp;State&nbsp;University Viticulture&nbsp;&amp;&nbsp;Enology</h1>
+													<h1><a href="https://soilhealth.wsu.edu/" target="_blank">Washington Soil&nbsp;Health Initiative</a></h1>
 											</td>
 										</tr>
 									</table>
@@ -676,7 +675,7 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
                                     	<tr>
                                         	<td class="bodyContent" style="padding-top:10; padding-bottom:0;">
-                                            	<img src="http://via.placeholder.com/560x560" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
+                                            	<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
                                             </td>
                                         </tr>
                                         <tr>
@@ -697,8 +696,8 @@
                                         	<td align="center" valign="top" class="templateColumnContainerIMG" style="padding-top:10px;">
                                             	<table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 	<tr>
-														<td class="leftColumnContent" align="middle">
-															<img src="http://via.placeholder.com/160x160" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+														<td class="leftColumnContent">
+															<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
 															</td>
                                                     </tr>
                                                 </table>
@@ -720,68 +719,21 @@
                                     </table>
                                     <!-- // END COLUMNS -->
                                </td>
-							</tr>
-							<tr>
-								<td valign="top" id="templateButtons">
-								<!--[if (gte mso 9)|(IE)]>
-								<table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-								<tr>
-								<td align="center" valign="top" width="300" style="width:300px;">
-								<![endif]-->
-									<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+                            </tr>
+                            <tr>
+								<td align="center" valign="top">
+									<!-- BEGIN BODY // -->
+									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateEvent">
 										<tr>
-											<td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
-												<tbody class="mcnButtonBlockOuter">
-													<tr>
-														<td style="padding-top:25px; padding-right:18px; padding-bottom:20px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-															<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #BE8B13;border-radius: 3px;background-color: #FFFFFF;">
-																<tbody>
-																	<tr>
-																		<td align="center" valign="middle" class="mcnButtonContent" style="font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 15px;">
-																			<a class="mcnButton " title="CALENDAR OF EVENTS" href="http://wine.wsu.edu/events/" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #7A6D2E;">CALENDAR OF EVENTS</a>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+											<td valign="top" class="bodyContent" mc:edit="body_content01">
+													<h2 class="null">[Month] [Year]</h2>
+													<h3 class="null">Upcoming Events</h3>
+													<strong>Soil Health Workshop</strong><br>
+													WSU Small Grains <a href="http://smallgrains.wsu.edu/event/management-matters-for-soil-health-workshop/?utm_campaign=auto-draft&amp;utm_source=auto-draft-2019-17&amp;utm_medium=email&amp;utm_content=link-18">Management Matters for Soil Health Workshop</a> is Jan. 22 at Pullman. 
 											</td>
 										</tr>
 									</table>
-								<!--[if (gte mso 9)|(IE)]>
-								</td>
-								<td align="center" valign="top" width="300" style="width:300px;">
-								<![endif]-->
-									<table role="presentation" align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
-										<tr>
-											<td valign="top" class="columnContainer">
-												<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
-													<tbody class="mcnButtonBlockOuter">
-														<tr>
-															<td style="padding-top:25px; padding-right:18px; padding-bottom:20px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
-																<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border: 3px solid #BE8B13;border-radius: 3px;background-color: #FFFFFF;">
-																	<tbody>
-																		<tr>
-																			<td align="center" valign="middle" class="mcnButtonContent" style="font-family: &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; padding: 15px;">
-																				<a class="mcnButton " title="SUBMIT A STORY IDEA" href="https://cahnrs.wsu.edu/marketing/cahnrs-news-submission/" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #7A6D2E;">SUBMIT A STORY IDEA</a>
-																			</td>
-																		</tr>
-																	</tbody>
-																</table>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
-									</table>
-								<!--[if (gte mso 9)|(IE)]>
-								</td>
-								</tr>
-								</table>
-								<![endif]-->
+									<!-- // END BODY -->
 								</td>
 							</tr>
                         	<tr>
@@ -790,20 +742,20 @@
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
 										<tr>
 											<td valign="top" class="footerSocial" mc:edit="footer_content00" id="templateSocial">
-												<a href="http://wine.wsu.edu/" target="_blank"><img alt="Find us at wine.wsu.edu" data-file-id="1183025" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/f6909df0-16f3-4fcc-9dd1-1e075dac96fe.png" style="border: 0px initial ; width: 23px; height: 36px; margin: 0px;" width="23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/wine.wsu.edu" target="_blank"><img alt="Find us on Facebook" data-file-id="1183029" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/e38181d5-6e8d-49b3-b888-16c40a218c5b.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/WSUWineScience" target="_blank"><img alt="Find us on Twitter" data-file-id="1183033" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/b8b74823-a554-433f-aa89-56ec93e4623d.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wsu_wine_science/" target="_blank"><img alt="Find us on Instagram" data-file-id="1183033" height="24" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/7f4bc03e-7cd4-49a2-bd70-5204ef286523.png" style="border: 0px initial ; width: 24px; height: 24px; margin: 0px;" width="24"/></a><br><br>
-												If you have comments or questions about a story, please <a href="mailto:lauren.paterson@wsu.edu">contact us</a>.
+												<a href="https://soilhealth.wsu.edu/" target="_blank"><img alt="Find us at soilhealth.wsu.edu" data-file-id="1183025" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/f6909df0-16f3-4fcc-9dd1-1e075dac96fe.png" style="border: 0px initial ; width: 23px; height: 36px; margin: 0px;" width="23"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/WSU_SoilHealth" target="_blank"><img alt="Find WSU Soil Health on Twitter" data-file-id="1183033" height="36" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/b8b74823-a554-433f-aa89-56ec93e4623d.png" style="border: 0px initial ; width: 24px; height: 36px; margin: 0px;" width="24"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/wsu_soilhealth/" target="_blank"><img alt="Find WSU Soil Health on Instagram" data-file-id="1183033" height="24" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/7f4bc03e-7cd4-49a2-bd70-5204ef286523.png" style="border: 0px initial ; width: 24px; height: 24px; margin: 0px;" width="24"/></a><br><br>
+												If you have comments or questions about a story, please <a href="mailto:chrisbenedict@wsu.edu">contact us</a>.
 											</td>
 										</tr>
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content01">
-												<a href="http://wine.wsu.edu/" target="_blank"><img align="center" alt="WSU Extension logo" width="246" height="52" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/fbf20a41-7cea-48c6-8039-0e906ca89c3d.png" style="border: 0px; width: 246px; height: 52px; margin: 0px;"></a>
+												<a href="https://soilhealth.wsu.edu/" target="_blank"><img align="center" alt="Washington Health Soil Intiative" width="246" height="166" src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/fbf20a41-7cea-48c6-8039-0e906ca89c3d.png" style="border: 0px; width: 246px; height: 166px; margin: 0px;"></a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;padding-bottom:0;" mc:edit="footer_content02">
 												<a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe</a><br>
-												CAHNRS Communications, Washington State University<br>
-												PO Box 646228, Pullman, WA 99164-6228
+												Soil Health, Washington State University<br>
+												1000 N. Forest St., Suite 201 Bellingham, WA 98225
 											 </td>
                                         </tr>
                                         <tr>

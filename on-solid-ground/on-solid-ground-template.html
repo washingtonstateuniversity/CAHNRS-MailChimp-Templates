@@ -112,7 +112,7 @@
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/ font-size:16px;
+				/*@editable*/ font-size:18px;
 				/*@editable*/ font-style:normal;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
@@ -134,8 +134,8 @@
 				/*@editable*/ color:#1F1F1F !important;
 				display:block;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/ font-size:14px;
-				/*@editable*/ font-style:italic;
+				/*@editable*/ font-size:16px;
+				/*@editable*/ font-style:none;
 				/*@editable*/ font-weight:bold;
 				/*@editable*/ line-height:100%;
 				/*@editable*/ letter-spacing:normal;
@@ -167,7 +167,7 @@
 			.preheaderContent{
 				/*@editable*/ color:#1F1F1F;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/ font-size:10px;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:125%;
 				/*@editable*/ text-align:left;
 			}
@@ -189,7 +189,7 @@
 			* @tip Set the background color and borders for your email's header area.
 			* @theme header
 			*/
-			#templateHeader{
+			#headerContent{
 				/*@editable*/ background-color:#FFFFFF;
 				/*@editable*/ border-top:1px solid #FFFFFF;
 				/*@editable*/ border-bottom:1px solid #FFFFFF;
@@ -349,7 +349,7 @@
 			.leftColumnContent img{
 				display:inline;
 				height:auto !important;
-				/*@editable*/ max-width:560px !important;
+				/*@editable*/ max-width:480px !important;
 				/*@editable*/ width:100% !important;
 			}
 
@@ -362,7 +362,7 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				/*@editable*/ background-color:#222222;
+				/*@editable*/ background-color:#111111;
 				/*@editable*/ border-top:1px solid #FFFFFF;
 			}
 
@@ -375,7 +375,7 @@
 			.footerContent{
 				/*@editable*/ color:#FFFFFF;
 				/*@editable*/ font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				/*@editable*/ font-size:10px;
+				/*@editable*/ font-size:12px;
 				/*@editable*/ line-height:125%;
 				padding-top:20px;
 				padding-right:20px;
@@ -509,6 +509,8 @@
 				*/
 				.columnImage{
 					height:auto !important;
+					margin-left: auto;
+                    margin-right: auto;
 					/*@editable*/ max-width:480px !important;
 					/*@editable*/ width:100% !important;
 				}
@@ -538,7 +540,7 @@
 				* @tip Make the body content text larger in size for better readability on small screens.
 				*/
 				.footerContent{
-					/*@editable*/ font-size:14px !important;
+					/*@editable*/ font-size:12px !important;
 					/*@editable*/ line-height:115% !important;
 				}
 
@@ -562,11 +564,11 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
+                                            <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;" mc:edit="preheader_content00">
 												Events and updates on WSU research and Extension supporting Northwest agriculture
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                            <td valign="top" width="85" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01"><div style="text-align:right;"><a href="*|ARCHIVE|*" target="_blank">View Online</a></div>
+                                            <td valign="top" width="80" class="preheaderContent" style="padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01"><div style="text-align:right;"><a href="*|ARCHIVE|*" target="_blank">View Online</a></div>
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
@@ -577,7 +579,7 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN HEADER // -->
-                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="headerContent">
                                         <tr>
                                             <td valign="top" class="headerContent">
                                             	<img src="https://gallery.mailchimp.com/3cd4b2a328519c34e51f46c1d/images/0fae7675-f9a0-4a9d-adb9-6301719cd55e.jpg" alt="On Solid Ground, Agricultural and Natural Resources Science News, WSU College of Agricultural, Human, and Natural Resource Sciences." style="height: 148px; width: 600px; margin: 0; padding: 0;"  width="600" height="148" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
@@ -587,19 +589,6 @@
                                     <!-- // END HEADER -->
                                 </td>
 							</tr>
-							<tr>
-								<td align="center" valign="top">
-									<!-- BEGIN BODY // -->
-									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
-										<tr>
-											<td valign="top" class="bodyContent" mc:edit="body_content00">
-												<a href="*|ARCHIVE|*">ARCHIVE</a> | <a href="*|UPDATE_PROFILE|*">MANAGE SUBSCRIPTION</a>
-											</td>
-										</tr>
-									</table>
-									<!-- // END BODY -->
-								</td>
-							</tr>
                         	<tr>
                             	<td align="center" valign="top" style="color:#1F1F1F;text-decoration: none;">
                                 	<!-- BEGIN COLUMNS // -->
@@ -608,8 +597,8 @@
                                         	<td align="center" valign="top" class="templateColumnContainerIMG" style="padding-top:20px;">
                                             	<table role="presentation" border="0" cellpadding="20" cellspacing="0" width="100%">
                                                 	<tr>
-                                                    	<td class="leftColumnContent">
-                                                        	<img src="http://gallery.mailchimp.com/569c0869e0552eb4cd827f095/images/image_placeholder_160px.png" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                    	<td class="leftColumnContent" align="middle">
+                                                        	<img src="http://via.placeholder.com/160x160" style="max-width:160px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -640,7 +629,7 @@
 											<td valign="top" class="bodyContent" mc:edit="body_content01">
 													<h2 class="null">[Month] [Year]</h2>
 													<h3 class="null">Upcoming Events</h3>
-													<strong>Soil Health Workshop</strong><br>
+													<h4>Soil Health Workshop</h4>
 													WSU Small Grains <a href="http://smallgrains.wsu.edu/event/management-matters-for-soil-health-workshop/?utm_campaign=auto-draft&amp;utm_source=auto-draft-2019-17&amp;utm_medium=email&amp;utm_content=link-18">Management Matters for Soil Health Workshop</a> is Jan. 22 at Pullman. 
 											</td>
 										</tr>
@@ -654,15 +643,12 @@
 									<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" id="templateNews">
 										<tr>
 											<td valign="top" class="bodyContent" mc:edit="body_content02">
-													<strong>Enjoy our monthly newsletters from CAHNRS!</strong>
-													<br>
-													<br><strong>WSU's On Solid Ground</strong>
-													<br>
-													Washington agriculture and natural resources. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=df0b077091">Subscribe here »</a>
-													<br>
-													<br><strong>WSU's Voice of the Vine</strong>
-													<br>
-													Viticulture and enology for Washington's world-class wine industry. <a href="http://wsu.us5.list-manage.com/subscribe?u=3cd4b2a328519c34e51f46c1d&amp;id=a3e4964764">Subscribe here »</a>
+												<h2>Enjoy our monthly newsletters from CAHNRS!</h2><br>
+												<h3>WSU's On Solid Ground</h3>
+												Washington agriculture and natural resources. <a href="https://news.cahnrs.wsu.edu/newsletters/on-solid-ground/?utm_source=osg&utm_medium=newsletter&utm_campaign=osg-newsletter&utm_content=subscribe-newsletter">Subscribe here »</a>
+												<br><br>
+												<h3>WSU's Voice of the Vine</h3>
+												Viticulture and enology for Washington's world-class wine industry. <a href="https://news.cahnrs.wsu.edu/newsletters/voice-of-the-vine/?utm_source=osg&utm_medium=newsletter&utm_campaign=osg-newsletter&utm_content=subscribe-newsletter">Subscribe here »</a>
 											</td>
 										</tr>
 									</table>
@@ -680,7 +666,8 @@
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
-													<a href="https://cahnrs.wsu.edu/communications/">CAHNRS Communications</a>, Washington State University, PO Box 646228, Pullman, WA 99164-6228<br><a href="http://access.wsu.edu/">Accessibility</a>&nbsp;| <a href="http://copyright.wsu.edu/">Copyright</a>&nbsp;| <a href="http://policies.wsu.edu/">Policies</a>
+												<a href="https://cahnrs.wsu.edu/communications/">CAHNRS&nbsp;Communications</a>, Washington&nbsp;State&nbsp;University, PO&nbsp;Box&nbsp;646228, Pullman,&nbsp;WA 99164-6228<br>
+												<a href="http://access.wsu.edu/">Accessibility</a>&nbsp;| <a href="http://copyright.wsu.edu/">Copyright</a>&nbsp;| <a href="http://policies.wsu.edu/">Policies</a>
 											 </td>
                                         </tr>
                                         <tr>
